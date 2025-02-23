@@ -21,7 +21,7 @@ const ChatInterface = () => {
     {
       id: 1,
       type: "ai",
-      content: "Hello! How can I assist you today?",
+      content: "Hello! Welcome to Docucrypt!",
       timestamp: new Date(),
     },
   ]);
@@ -58,13 +58,13 @@ const ChatInterface = () => {
 
     try {
       // Comment out the actual API call
-      // const response = await query(inputMessage, "deepseek-coder", token, 30);
+      const response = await query(inputMessage, "deepseek-coder", token, 30);
 
       // Use sample response instead
-      const response = {
-        response:
-          "<think>This is the AI's thinking process</think>\nHeres a sample response from teh usernHeres a sample response from teh usernHeres a sample response from teh usernHeres a sample response from teh user",
-      };
+      // const response = {
+      //   response:
+      //     "<think>Thinking...</think>Hello! How can I assist you today? 😊",
+      // };
 
       const aiResponse = response.response || response;
 
